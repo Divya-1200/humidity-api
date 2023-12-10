@@ -1,0 +1,429 @@
+2023-12-10 23:19:30.278 +00:00 [INF] Start processing HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=100&count=30
+2023-12-10 23:19:30.299 +00:00 [INF] Sending HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=100&count=30
+2023-12-10 23:19:30.546 +00:00 [INF] Now listening on: https://localhost:7002
+2023-12-10 23:19:30.546 +00:00 [INF] Now listening on: http://localhost:5029
+2023-12-10 23:19:30.547 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-10 23:19:30.547 +00:00 [INF] Hosting environment: Development
+2023-12-10 23:19:30.547 +00:00 [INF] Content root path: /Users/divyap/divya/univ-workshop/humidity-api-minimal/humidity-api-minimal
+2023-12-10 23:19:30.664 +00:00 [INF] Received HTTP response headers after 363.8783ms - 200
+2023-12-10 23:19:30.666 +00:00 [INF] End processing HTTP request after 391.7974ms - 200
+2023-12-10 23:19:30.825 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-10 23:19:30.848 +00:00 [WRN]  Humidity is 87 greater than threshold
+2023-12-10 23:19:30.849 +00:00 [WRN]  Humidity is 85 greater than threshold
+2023-12-10 23:19:30.849 +00:00 [WRN]  Humidity is 98 greater than threshold
+2023-12-10 23:19:30.849 +00:00 [WRN]  Humidity is 77 greater than threshold
+2023-12-10 23:19:30.849 +00:00 [WRN]  Humidity is 94 greater than threshold
+2023-12-10 23:19:30.849 +00:00 [WRN]  Humidity is 80 greater than threshold
+2023-12-10 23:19:30.849 +00:00 [WRN]  Humidity is 95 greater than threshold
+2023-12-10 23:19:30.849 +00:00 [WRN]  Humidity is 95 greater than threshold
+2023-12-10 23:19:30.849 +00:00 [WRN]  Humidity is 77 greater than threshold
+2023-12-10 23:19:30.849 +00:00 [WRN]  Humidity is 78 greater than threshold
+2023-12-10 23:19:30.849 +00:00 [WRN]  Humidity is 89 greater than threshold
+2023-12-10 23:19:30.849 +00:00 [WRN]  Humidity is 87 greater than threshold
+2023-12-10 23:19:30.849 +00:00 [WRN]  Humidity is 99 greater than threshold
+2023-12-10 23:19:30.849 +00:00 [WRN]  Humidity is 92 greater than threshold
+2023-12-10 23:19:30.849 +00:00 [WRN]  Humidity is 82 greater than threshold
+2023-12-10 23:19:30.906 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.913 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.914 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.914 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.914 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.914 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.914 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.914 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.914 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.914 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.914 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.914 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.915 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.916 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.916 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:30.916 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:19:31.699 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/swagger/index.html - -
+2023-12-10 23:19:31.757 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/swagger/index.html - - - 200 - text/html;charset=utf-8 58.3772ms
+2023-12-10 23:19:31.806 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/swagger/v1/swagger.json - -
+2023-12-10 23:19:31.809 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-10 23:19:31.834 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 28.7607ms
+2023-12-10 23:19:35.795 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/humidity - -
+2023-12-10 23:19:35.840 +00:00 [INF] Executing endpoint 'HTTP: GET /humidity'
+2023-12-10 23:19:35.870 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-10 23:19:35.920 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Id", "h"."dateTime", "h"."humidity", "h"."sensorId"
+FROM "HumidityDatas" AS "h"
+2023-12-10 23:19:35.924 +00:00 [INF] Setting HTTP status code 200.
+2023-12-10 23:19:35.924 +00:00 [INF] Writing value of type 'List`1' as Json.
+2023-12-10 23:19:35.929 +00:00 [INF] Executed endpoint 'HTTP: GET /humidity'
+2023-12-10 23:19:35.930 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/humidity - - - 200 - application/json;+charset=utf-8 135.3155ms
+2023-12-10 23:19:37.017 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/humidity - -
+2023-12-10 23:19:37.018 +00:00 [INF] Executing endpoint 'HTTP: GET /humidity'
+2023-12-10 23:19:37.031 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-10 23:19:37.032 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Id", "h"."dateTime", "h"."humidity", "h"."sensorId"
+FROM "HumidityDatas" AS "h"
+2023-12-10 23:19:37.033 +00:00 [INF] Setting HTTP status code 200.
+2023-12-10 23:19:37.033 +00:00 [INF] Writing value of type 'List`1' as Json.
+2023-12-10 23:19:37.033 +00:00 [INF] Executed endpoint 'HTTP: GET /humidity'
+2023-12-10 23:19:37.033 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/humidity - - - 200 - application/json;+charset=utf-8 16.4852ms
+2023-12-10 23:20:58.704 +00:00 [INF] Start processing HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=100&count=30
+2023-12-10 23:20:58.726 +00:00 [INF] Sending HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=100&count=30
+2023-12-10 23:20:58.754 +00:00 [INF] Now listening on: http://localhost:5029
+2023-12-10 23:20:58.755 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-10 23:20:58.755 +00:00 [INF] Hosting environment: Development
+2023-12-10 23:20:58.755 +00:00 [INF] Content root path: /Users/divyap/divya/univ-workshop/humidity-api-minimal/humidity-api-minimal
+2023-12-10 23:20:59.010 +00:00 [INF] Received HTTP response headers after 282.5156ms - 200
+2023-12-10 23:20:59.014 +00:00 [INF] End processing HTTP request after 313.5138ms - 200
+2023-12-10 23:20:59.016 +00:00 [WRN] inside here here
+2023-12-10 23:20:59.169 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-10 23:20:59.190 +00:00 [WRN]  Humidity is 99 greater than threshold
+2023-12-10 23:20:59.190 +00:00 [WRN]  Humidity is 99 greater than threshold
+2023-12-10 23:20:59.190 +00:00 [WRN]  Humidity is 86 greater than threshold
+2023-12-10 23:20:59.191 +00:00 [WRN]  Humidity is 97 greater than threshold
+2023-12-10 23:20:59.191 +00:00 [WRN]  Humidity is 92 greater than threshold
+2023-12-10 23:20:59.191 +00:00 [WRN]  Humidity is 95 greater than threshold
+2023-12-10 23:20:59.191 +00:00 [WRN]  Humidity is 78 greater than threshold
+2023-12-10 23:20:59.191 +00:00 [WRN]  Humidity is 86 greater than threshold
+2023-12-10 23:20:59.240 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.247 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.248 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.248 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.248 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.248 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.248 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.248 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.248 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.249 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.249 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.249 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.249 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.249 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.249 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.249 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.250 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.250 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.250 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.250 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.250 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.250 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.251 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.251 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.251 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.251 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.251 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.251 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.252 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:20:59.252 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-10 23:22:44.444 +00:00 [INF] Application is shutting down...

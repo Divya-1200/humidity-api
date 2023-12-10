@@ -4,13 +4,26 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using AspNetCoreRateLimit;
 using Microsoft.Extensions.Configuration;
+using Serilog;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+// Configure Serilog
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("log.txt", rollingInterval: RollingInterval.Day) // Log to a text file
+    .CreateLogger();
+
+builder.Host.UseSerilog(); // Use Serilog as the logger
+
 
 var connectionString = builder.Configuration.GetConnectionString("Humidity") ?? "Data Source=Humidity.db";
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSqlite<HumidityDb>(connectionString);
+builder.Services.AddDbContext<HumidityDb>(options => options.UseSqlite(connectionString));
 
 // Add services to the container.
 builder.Services.AddEndpointsApiExplorer();
@@ -58,7 +71,7 @@ app.MapGet("/humidity", async (HumidityDb db) =>
         return Results.Ok(humidityData);
     }
     catch (Exception ex){
-        Console.WriteLine($"An error occurred: {ex}");
+        Log.Error($"An error occurred: {ex}");
         return Results.NotFound("No humidity data table found.");
 
     }

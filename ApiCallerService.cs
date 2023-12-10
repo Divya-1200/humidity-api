@@ -14,12 +14,15 @@ public class ApiCallerService : BackgroundService
     private readonly string apiUrl = "https://www.randomnumberapi.com/api/v1.0/random?min=40&max=100&count=30"; 
     private readonly HttpClient httpClient;
     private readonly IServiceProvider _serviceProvider;
+    private readonly ILogger<ApiCallerService> _logger; // Add this field
 
-    public ApiCallerService(HttpClient httpClient,  IServiceProvider serviceProvider)
+    public ApiCallerService(HttpClient httpClient,  IServiceProvider serviceProvider, ILogger<ApiCallerService> logger)
     {
          this.httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
         // Service provider scope to access the DB inside the scheduler
         _serviceProvider = serviceProvider ?? throw new ArgumentNullException(nameof(serviceProvider));
+        _logger = logger ?? throw new ArgumentNullException(nameof(logger)); // Initialize logger
+
 
 
     }
@@ -46,6 +49,7 @@ public class ApiCallerService : BackgroundService
             // Check if the request was successful
             if (response.IsSuccessStatusCode)
             {
+                _logger.LogWarning($"inside here here");
 
                 string responseData = await response.Content.ReadAsStringAsync();
                 //HumidityData dataObject = JsonSerializer.Deserialize<HumidityData>(responseData);
@@ -67,7 +71,7 @@ public class ApiCallerService : BackgroundService
                             // Alert Notification if humidity is higher than 75
                             if (humidityValue > 75)
                             {
-                                Console.WriteLine($" Humidity is {humidityValue} greater than threshold");
+                                _logger.LogWarning($" Humidity is {humidityValue} greater than threshold");
                             }
 
                             await _dbContext.HumidityDatas.AddAsync(apiResponseData);
@@ -78,7 +82,7 @@ public class ApiCallerService : BackgroundService
                 else
                 {
 
-                    Console.WriteLine("Error Found");
+                    _logger.LogWarning("Error Found");
 
 
                 }
@@ -86,12 +90,12 @@ public class ApiCallerService : BackgroundService
             }
             else
             {
-                Console.WriteLine($"API call failed. Status code: {response.StatusCode}");
+                _logger.LogWarning($"API call failed. Status code: {response.StatusCode}");
             }
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"An error occurred: {ex}");
+            _logger.LogWarning($"An error occurred: {ex}");
         }
     }
 }
