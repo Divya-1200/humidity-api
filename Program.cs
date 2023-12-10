@@ -2,6 +2,8 @@
 using Humidity;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using AspNetCoreRateLimit;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,14 +13,21 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSqlite<HumidityDb>(connectionString);
 
 // Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-// Inside ConfigureServices method in Startup.cs
 builder.Services.AddHttpClient<ApiCallerService>(); // Register HttpClient
 builder.Services.AddHostedService<ApiCallerService>(); // Register the background service
+
+
+//  Rate limiting Configuration
+builder.Services.AddMemoryCache();
+builder.Services.AddOptions();
+builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+builder.Services.Configure<IpRateLimitOptions>(builder.Configuration.GetSection("IpRateLimiting"));
+builder.Services.Configure<IpRateLimitPolicies>(builder.Configuration.GetSection("IpRateLimitPolicies"));
+builder.Services.AddInMemoryRateLimiting();
 
 
 var app = builder.Build();
@@ -32,6 +41,9 @@ if (app.Environment.IsDevelopment())
 
 
 app.UseHttpsRedirection();
+// Apply rate limiting middleware
+app.UseIpRateLimiting();
+
 
 app.MapGet("/humidity", async (HumidityDb db) =>
 {
