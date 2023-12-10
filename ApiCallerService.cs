@@ -3,10 +3,14 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
+using App.Metrics;
 using Humidity;
+using App.Metrics.Counter;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using humidity_api_minimal;
+
 
 public class ApiCallerService : BackgroundService
 {
@@ -15,16 +19,15 @@ public class ApiCallerService : BackgroundService
     private readonly HttpClient httpClient;
     private readonly IServiceProvider _serviceProvider;
     private readonly ILogger<ApiCallerService> _logger; // Add this field
+    private readonly IMetrics _metrics;
 
-    public ApiCallerService(HttpClient httpClient,  IServiceProvider serviceProvider, ILogger<ApiCallerService> logger)
+    public ApiCallerService(HttpClient httpClient,  IServiceProvider serviceProvider, ILogger<ApiCallerService> logger, IMetrics metrics)
     {
          this.httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
         // Service provider scope to access the DB inside the scheduler
         _serviceProvider = serviceProvider ?? throw new ArgumentNullException(nameof(serviceProvider));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger)); // Initialize logger
-
-
-
+        _metrics = metrics ?? throw new ArgumentNullException(nameof(metrics));
     }
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -34,7 +37,8 @@ public class ApiCallerService : BackgroundService
             {
                 var dbContext = scope.ServiceProvider.GetRequiredService<HumidityDb>();
                 await CallExternalApi(dbContext);
-            } 
+            }
+
             await Task.Delay(TimeSpan.FromMinutes(30), stoppingToken); // Delay for 30 minutes
         }
     }
@@ -68,9 +72,17 @@ public class ApiCallerService : BackgroundService
                                 humidity = humidityValue,
                                 dateTime = DateTime.Now
                             };
+                            var apiCallsCounterOptions = new CounterOptions
+                            {
+                                Name = MetricsRegistry.ApiCallsMetric,
+                                MeasurementUnit = Unit.Calls
+                                
+                            };
                             // Alert Notification if humidity is higher than 75
                             if (humidityValue > 75)
                             {
+                                _metrics.Measure.Counter.Increment(apiCallsCounterOptions);
+
                                 _logger.LogWarning($" Humidity is {humidityValue} greater than threshold");
                             }
 

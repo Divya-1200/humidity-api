@@ -30,6 +30,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
+
+
 builder.Services.AddHttpClient<ApiCallerService>(); // Register HttpClient
 builder.Services.AddHostedService<ApiCallerService>(); // Register the background service
 
@@ -42,6 +44,11 @@ builder.Services.Configure<IpRateLimitOptions>(builder.Configuration.GetSection(
 builder.Services.Configure<IpRateLimitPolicies>(builder.Configuration.GetSection("IpRateLimitPolicies"));
 builder.Services.AddInMemoryRateLimiting();
 
+builder.Services.AddMetrics();
+builder.Services.AddMetricsTrackingMiddleware();
+builder.Services.AddMetricsEndpoints();
+
+
 
 var app = builder.Build();
 
@@ -52,7 +59,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
+app.UseMetricsEndpoint();
 app.UseHttpsRedirection();
 // Apply rate limiting middleware
 app.UseIpRateLimiting();
