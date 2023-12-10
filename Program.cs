@@ -33,8 +33,26 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/humidity", async (HumidityDb db) => await db.HumidityDatas.ToListAsync());
+app.MapGet("/humidity", async (HumidityDb db) =>
+{
+    try {
+        var humidityData = await db.HumidityDatas.ToListAsync();
 
+        if (humidityData.Count == 0)
+        {
+            return Results.NotFound("No humidity data found.");
+        }
+
+        return Results.Ok(humidityData);
+    }
+    catch (Exception ex){
+        Console.WriteLine($"An error occurred: {ex}");
+        return Results.NotFound("No humidity data table found.");
+
+    }
+
+
+});
 
 app.Run();
 

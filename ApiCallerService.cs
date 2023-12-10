@@ -10,16 +10,15 @@ using Microsoft.Extensions.Hosting;
 
 public class ApiCallerService : BackgroundService
 {
+    // Random external Api to generate data
     private readonly string apiUrl = "https://www.randomnumberapi.com/api/v1.0/random?min=40&max=100&count=30"; 
     private readonly HttpClient httpClient;
-    //private readonly HumidityDb _dbContext;
-    //private readonly HumidityDb _dbContext;
     private readonly IServiceProvider _serviceProvider;
 
     public ApiCallerService(HttpClient httpClient,  IServiceProvider serviceProvider)
     {
          this.httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
-        //_dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
+        // Service provider scope to access the DB inside the scheduler
         _serviceProvider = serviceProvider ?? throw new ArgumentNullException(nameof(serviceProvider));
 
 
@@ -65,8 +64,8 @@ public class ApiCallerService : BackgroundService
                                 humidity = humidityValue,
                                 dateTime = DateTime.Now
                             };
-
-                            if (humidityValue > 70)
+                            // Alert Notification if humidity is higher than 75
+                            if (humidityValue > 75)
                             {
                                 Console.WriteLine($" Humidity is {humidityValue} greater than threshold");
                             }

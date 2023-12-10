@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace humidity_api_minimal.Migrations
 {
     [DbContext(typeof(HumidityDb))]
-    [Migration("20231207102747_InitialCreate")]
+    [Migration("20231210191545_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
