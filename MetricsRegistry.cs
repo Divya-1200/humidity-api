@@ -3,5 +3,7 @@
     public static class MetricsRegistry
     {
         public static string ApiCallsMetric => "ApiCalls";
+        public static string ErrorCallsMetric => "ErrorCalls";
+
     }
 }

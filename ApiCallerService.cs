@@ -1,33 +1,25 @@
-﻿using System;
-using System.Net.Http;
-using System.Text.Json;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using System.Text.Json;
 using App.Metrics;
 using Humidity;
 using App.Metrics.Counter;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using humidity_api_minimal;
 
 
 public class ApiCallerService : BackgroundService
 {
     // Random external Api to generate data
-    private readonly string apiUrl = "https://www.randomnumberapi.com/api/v1.0/random?min=40&max=100&count=30"; 
+    private readonly string apiUrl = "https://www.randomnumberapi.com/api/v1.0/random?min=40&max=80&count=30"; 
     private readonly HttpClient httpClient;
-    private readonly IServiceProvider _serviceProvider;
-    private readonly ILogger<ApiCallerService> _logger; // Add this field
-    private readonly IMetrics _metrics;
+    private readonly IServiceProvider _serviceProvider; // scoped service to access the database
+    private readonly ILogger<ApiCallerService> _logger; //logger service
+    private readonly IMetrics _metrics; // add track the metrics
 
     public ApiCallerService(HttpClient httpClient,  IServiceProvider serviceProvider, ILogger<ApiCallerService> logger, IMetrics metrics)
     {
-         this.httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
-        // Service provider scope to access the DB inside the scheduler
-        _serviceProvider = serviceProvider ?? throw new ArgumentNullException(nameof(serviceProvider));
+         this.httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));    
+        _serviceProvider = serviceProvider ?? throw new ArgumentNullException(nameof(serviceProvider)); // Service provider scope to access the DB inside the scheduler
         _logger = logger ?? throw new ArgumentNullException(nameof(logger)); // Initialize logger
-        _metrics = metrics ?? throw new ArgumentNullException(nameof(metrics));
+        _metrics = metrics ?? throw new ArgumentNullException(nameof(metrics)); // Initialize metrics
     }
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -53,12 +45,10 @@ public class ApiCallerService : BackgroundService
             // Check if the request was successful
             if (response.IsSuccessStatusCode)
             {
-                _logger.LogWarning($"inside here here");
-
+               
                 string responseData = await response.Content.ReadAsStringAsync();
-                //HumidityData dataObject = JsonSerializer.Deserialize<HumidityData>(responseData);
                 
-                if (_dbContext != null)
+                if (_dbContext != null) // Check db is present before writing it to the db
                 {
                     if (JsonSerializer.Deserialize<int[]>(responseData) is int[] humidityArray && humidityArray.Length > 0)
                     {
@@ -72,6 +62,7 @@ public class ApiCallerService : BackgroundService
                                 humidity = humidityValue,
                                 dateTime = DateTime.Now
                             };
+                            // Metrics Implementation
                             var apiCallsCounterOptions = new CounterOptions
                             {
                                 Name = MetricsRegistry.ApiCallsMetric,
@@ -88,13 +79,13 @@ public class ApiCallerService : BackgroundService
 
                             await _dbContext.HumidityDatas.AddAsync(apiResponseData);
                         }
-                        await _dbContext.SaveChangesAsync();
+                        await _dbContext.SaveChangesAsync(); // Save the 30 sensor data to the database
                     }
                 }
                 else
                 {
 
-                    _logger.LogWarning("Error Found");
+                    _logger.LogError("Error Found while accessing the DB");
 
 
                 }
@@ -102,7 +93,7 @@ public class ApiCallerService : BackgroundService
             }
             else
             {
-                _logger.LogWarning($"API call failed. Status code: {response.StatusCode}");
+                _logger.LogError($"API call failed. Status code: {response.StatusCode}");
             }
         }
         catch (Exception ex)
