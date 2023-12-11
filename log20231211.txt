@@ -1565,3 +1565,1189 @@ FROM "HumidityDatas" AS "h"
 2023-12-11 07:32:42.596 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/humidity - -
 2023-12-11 07:32:42.598 +00:00 [INF] Request get:/humidity from IP ::1 has been blocked, quota 1/1s exceeded by 1. Blocked by rule *, TraceIdentifier 0HMVQ39TGG754:00000006. MonitorMode: False
 2023-12-11 07:32:42.599 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/humidity - - - 429 - text/plain 2.8980ms
+2023-12-11 08:03:39.597 +00:00 [INF] Start processing HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=80&count=30
+2023-12-11 08:03:39.599 +00:00 [INF] Sending HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=80&count=30
+2023-12-11 08:03:39.998 +00:00 [INF] Received HTTP response headers after 398.5098ms - 200
+2023-12-11 08:03:39.998 +00:00 [INF] End processing HTTP request after 402.1436ms - 200
+2023-12-11 08:03:40.000 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 08:03:40.001 +00:00 [WRN]  Humidity is 79 greater than threshold
+2023-12-11 08:03:40.001 +00:00 [WRN]  Humidity is 77 greater than threshold
+2023-12-11 08:03:40.001 +00:00 [WRN]  Humidity is 77 greater than threshold
+2023-12-11 08:03:40.005 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.006 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.006 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.006 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.006 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.006 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.006 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.007 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.007 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.007 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.007 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.007 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.007 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.007 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.007 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.007 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.007 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.007 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.007 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.008 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.008 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.008 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.008 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.008 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.008 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.008 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.008 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.008 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.009 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:03:40.009 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:26:55.389 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5029/humidity - -
+2023-12-11 08:26:55.392 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5029/humidity - - - 307 0 - 3.6156ms
+2023-12-11 08:26:55.394 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/humidity - -
+2023-12-11 08:26:55.397 +00:00 [INF] Executing endpoint 'HTTP: GET /humidity'
+2023-12-11 08:26:55.399 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 08:26:55.404 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Id", "h"."dateTime", "h"."humidity", "h"."sensorId"
+FROM "HumidityDatas" AS "h"
+2023-12-11 08:26:55.408 +00:00 [INF] Setting HTTP status code 200.
+2023-12-11 08:26:55.408 +00:00 [INF] Writing value of type 'List`1' as Json.
+2023-12-11 08:26:55.409 +00:00 [INF] Executed endpoint 'HTTP: GET /humidity'
+2023-12-11 08:26:55.409 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/humidity - - - 200 - application/json;+charset=utf-8 15.4304ms
+2023-12-11 08:33:40.005 +00:00 [INF] Start processing HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=80&count=30
+2023-12-11 08:33:40.008 +00:00 [INF] Sending HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=80&count=30
+2023-12-11 08:33:40.533 +00:00 [INF] Received HTTP response headers after 525.1487ms - 200
+2023-12-11 08:33:40.534 +00:00 [INF] End processing HTTP request after 529.9124ms - 200
+2023-12-11 08:33:40.539 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 08:33:40.546 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.547 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.547 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.547 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.547 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.547 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.547 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.548 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.548 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.548 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.548 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.548 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.548 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.548 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.548 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.548 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.549 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.549 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.549 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.549 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.549 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.549 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.549 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.549 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.549 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.550 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.550 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.550 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.550 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 08:33:40.550 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:01:53.168 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5029/humidity - -
+2023-12-11 09:01:53.172 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5029/humidity - - - 307 0 - 30.2806ms
+2023-12-11 09:01:53.178 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/humidity - -
+2023-12-11 09:01:53.180 +00:00 [INF] Executing endpoint 'HTTP: GET /humidity'
+2023-12-11 09:01:53.182 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 09:01:53.191 +00:00 [ERR] Failed executing DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Id", "h"."dateTime", "h"."humidity", "h"."sensorId"
+FROM "HumidityDatas" AS "h"
+2023-12-11 09:01:53.228 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Humidity.HumidityDb'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-12-11 09:01:53.284 +00:00 [ERR] An error occurred: Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/divyap/divya/univ-workshop/humidity-api-minimal/humidity-api-minimal/Program.cs:line 80
+2023-12-11 09:01:53.285 +00:00 [INF] Setting HTTP status code 404.
+2023-12-11 09:01:53.285 +00:00 [INF] Writing value of type 'String' as Json.
+2023-12-11 09:01:53.286 +00:00 [INF] Executed endpoint 'HTTP: GET /humidity'
+2023-12-11 09:01:53.286 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/humidity - - - 404 - application/json;+charset=utf-8 108.3464ms
+2023-12-11 09:03:40.533 +00:00 [INF] Start processing HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=80&count=30
+2023-12-11 09:03:40.536 +00:00 [INF] Sending HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=80&count=30
+2023-12-11 09:03:40.974 +00:00 [INF] Received HTTP response headers after 437.904ms - 200
+2023-12-11 09:03:40.975 +00:00 [INF] End processing HTTP request after 442.925ms - 200
+2023-12-11 09:03:40.981 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 09:03:40.983 +00:00 [WRN]  Humidity is 78 greater than threshold
+2023-12-11 09:03:40.983 +00:00 [WRN]  Humidity is 79 greater than threshold
+2023-12-11 09:03:40.983 +00:00 [WRN]  Humidity is 78 greater than threshold
+2023-12-11 09:03:40.983 +00:00 [WRN]  Humidity is 77 greater than threshold
+2023-12-11 09:03:40.989 +00:00 [ERR] Failed executing DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:03:41.002 +00:00 [ERR] An exception occurred in the database while saving changes for context type 'Humidity.HumidityDb'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-12-11 09:03:41.065 +00:00 [WRN] An error occurred: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ApiCallerService.CallExternalApi(HumidityDb _dbContext) in /Users/divyap/divya/univ-workshop/humidity-api-minimal/humidity-api-minimal/ApiCallerService.cs:line 82
+2023-12-11 09:06:24.498 +00:00 [INF] Start processing HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=80&count=30
+2023-12-11 09:06:24.512 +00:00 [INF] Sending HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=80&count=30
+2023-12-11 09:06:24.861 +00:00 [INF] Now listening on: https://localhost:7002
+2023-12-11 09:06:24.861 +00:00 [INF] Now listening on: http://localhost:5029
+2023-12-11 09:06:24.863 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 09:06:24.865 +00:00 [INF] Hosting environment: Development
+2023-12-11 09:06:24.865 +00:00 [INF] Content root path: /Users/divyap/divya/univ-workshop/humidity-api-minimal/humidity-api-minimal
+2023-12-11 09:06:24.871 +00:00 [INF] Received HTTP response headers after 352.7033ms - 200
+2023-12-11 09:06:24.875 +00:00 [INF] End processing HTTP request after 380.7281ms - 200
+2023-12-11 09:06:25.034 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 09:06:25.080 +00:00 [WRN]  Humidity is 77 greater than threshold
+2023-12-11 09:06:25.080 +00:00 [WRN]  Humidity is 77 greater than threshold
+2023-12-11 09:06:25.131 +00:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:06:25.145 +00:00 [ERR] An exception occurred in the database while saving changes for context type 'Humidity.HumidityDb'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-12-11 09:06:25.203 +00:00 [WRN] An error occurred: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ApiCallerService.CallExternalApi(HumidityDb _dbContext) in /Users/divyap/divya/univ-workshop/humidity-api-minimal/humidity-api-minimal/ApiCallerService.cs:line 82
+2023-12-11 09:06:26.055 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/swagger/index.html - -
+2023-12-11 09:06:26.123 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/swagger/index.html - - - 200 - text/html;charset=utf-8 69.9632ms
+2023-12-11 09:06:26.187 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/swagger/v1/swagger.json - -
+2023-12-11 09:06:26.190 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-11 09:06:26.218 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 31.1638ms
+2023-12-11 09:06:27.165 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5029/humidity - -
+2023-12-11 09:06:27.173 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5029/humidity - - - 307 0 - 8.1765ms
+2023-12-11 09:06:27.202 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/humidity - -
+2023-12-11 09:06:27.242 +00:00 [INF] Executing endpoint 'HTTP: GET /humidity'
+2023-12-11 09:06:27.273 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 09:06:27.324 +00:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Id", "h"."dateTime", "h"."humidity", "h"."sensorId"
+FROM "HumidityDatas" AS "h"
+2023-12-11 09:06:27.325 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Humidity.HumidityDb'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-12-11 09:06:27.354 +00:00 [ERR] An error occurred: Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/divyap/divya/univ-workshop/humidity-api-minimal/humidity-api-minimal/Program.cs:line 80
+2023-12-11 09:06:27.355 +00:00 [INF] Setting HTTP status code 404.
+2023-12-11 09:06:27.355 +00:00 [INF] Writing value of type 'String' as Json.
+2023-12-11 09:06:27.358 +00:00 [INF] Executed endpoint 'HTTP: GET /humidity'
+2023-12-11 09:06:27.359 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/humidity - - - 404 - application/json;+charset=utf-8 156.3960ms
+2023-12-11 09:06:28.426 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5029/humidity - -
+2023-12-11 09:06:28.426 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5029/humidity - - - 307 0 - 0.6890ms
+2023-12-11 09:06:28.427 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/humidity - -
+2023-12-11 09:06:28.429 +00:00 [INF] Executing endpoint 'HTTP: GET /humidity'
+2023-12-11 09:06:28.445 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 09:06:28.447 +00:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Id", "h"."dateTime", "h"."humidity", "h"."sensorId"
+FROM "HumidityDatas" AS "h"
+2023-12-11 09:06:28.448 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Humidity.HumidityDb'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-12-11 09:06:28.471 +00:00 [ERR] An error occurred: Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/divyap/divya/univ-workshop/humidity-api-minimal/humidity-api-minimal/Program.cs:line 80
+2023-12-11 09:06:28.471 +00:00 [INF] Setting HTTP status code 404.
+2023-12-11 09:06:28.471 +00:00 [INF] Writing value of type 'String' as Json.
+2023-12-11 09:06:28.472 +00:00 [INF] Executed endpoint 'HTTP: GET /humidity'
+2023-12-11 09:06:28.472 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/humidity - - - 404 - application/json;+charset=utf-8 44.4188ms
+2023-12-11 09:06:37.252 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/humidity - -
+2023-12-11 09:06:37.253 +00:00 [INF] Executing endpoint 'HTTP: GET /humidity'
+2023-12-11 09:06:37.254 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 09:06:37.256 +00:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Id", "h"."dateTime", "h"."humidity", "h"."sensorId"
+FROM "HumidityDatas" AS "h"
+2023-12-11 09:06:37.258 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Humidity.HumidityDb'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-12-11 09:06:37.285 +00:00 [ERR] An error occurred: Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/divyap/divya/univ-workshop/humidity-api-minimal/humidity-api-minimal/Program.cs:line 80
+2023-12-11 09:06:37.286 +00:00 [INF] Setting HTTP status code 404.
+2023-12-11 09:06:37.286 +00:00 [INF] Writing value of type 'String' as Json.
+2023-12-11 09:06:37.286 +00:00 [INF] Executed endpoint 'HTTP: GET /humidity'
+2023-12-11 09:06:37.286 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/humidity - - - 404 - application/json;+charset=utf-8 34.6194ms
+2023-12-11 09:31:20.826 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5029/humidity - -
+2023-12-11 09:31:20.829 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5029/humidity - - - 307 0 - 3.4460ms
+2023-12-11 09:31:20.855 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/humidity - -
+2023-12-11 09:31:20.857 +00:00 [INF] Executing endpoint 'HTTP: GET /humidity'
+2023-12-11 09:31:20.859 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 09:31:20.863 +00:00 [ERR] Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Id", "h"."dateTime", "h"."humidity", "h"."sensorId"
+FROM "HumidityDatas" AS "h"
+2023-12-11 09:31:20.865 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Humidity.HumidityDb'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-12-11 09:31:20.884 +00:00 [ERR] An error occurred: Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/divyap/divya/univ-workshop/humidity-api-minimal/humidity-api-minimal/Program.cs:line 80
+2023-12-11 09:31:20.884 +00:00 [INF] Setting HTTP status code 404.
+2023-12-11 09:31:20.885 +00:00 [INF] Writing value of type 'String' as Json.
+2023-12-11 09:31:20.885 +00:00 [INF] Executed endpoint 'HTTP: GET /humidity'
+2023-12-11 09:31:20.885 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/humidity - - - 404 - application/json;+charset=utf-8 30.1810ms
+2023-12-11 09:31:27.701 +00:00 [INF] Start processing HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=80&count=30
+2023-12-11 09:31:27.717 +00:00 [INF] Sending HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=80&count=30
+2023-12-11 09:31:28.030 +00:00 [INF] Now listening on: https://localhost:7002
+2023-12-11 09:31:28.030 +00:00 [INF] Now listening on: http://localhost:5029
+2023-12-11 09:31:28.032 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 09:31:28.032 +00:00 [INF] Hosting environment: Development
+2023-12-11 09:31:28.032 +00:00 [INF] Content root path: /Users/divyap/divya/univ-workshop/humidity-api-minimal/humidity-api-minimal
+2023-12-11 09:31:28.073 +00:00 [INF] Received HTTP response headers after 354.5305ms - 200
+2023-12-11 09:31:28.074 +00:00 [INF] End processing HTTP request after 376.8477ms - 200
+2023-12-11 09:31:28.222 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 09:31:28.266 +00:00 [WRN]  Humidity is 79 greater than threshold
+2023-12-11 09:31:28.266 +00:00 [WRN]  Humidity is 79 greater than threshold
+2023-12-11 09:31:28.266 +00:00 [WRN]  Humidity is 77 greater than threshold
+2023-12-11 09:31:28.266 +00:00 [WRN]  Humidity is 76 greater than threshold
+2023-12-11 09:31:28.266 +00:00 [WRN]  Humidity is 76 greater than threshold
+2023-12-11 09:31:28.266 +00:00 [WRN]  Humidity is 77 greater than threshold
+2023-12-11 09:31:28.319 +00:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:31:28.332 +00:00 [ERR] An exception occurred in the database while saving changes for context type 'Humidity.HumidityDb'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-12-11 09:31:28.383 +00:00 [WRN] An error occurred: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ApiCallerService.CallExternalApi(HumidityDb _dbContext) in /Users/divyap/divya/univ-workshop/humidity-api-minimal/humidity-api-minimal/ApiCallerService.cs:line 82
+2023-12-11 09:31:29.223 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/swagger/index.html - -
+2023-12-11 09:31:29.289 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/swagger/index.html - - - 200 - text/html;charset=utf-8 66.9163ms
+2023-12-11 09:31:29.346 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/swagger/v1/swagger.json - -
+2023-12-11 09:31:29.351 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-11 09:31:29.385 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 38.3125ms
+2023-12-11 09:32:00.661 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5029/humidity - -
+2023-12-11 09:32:00.671 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5029/humidity - - - 307 0 - 9.2958ms
+2023-12-11 09:32:00.834 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/humidity - -
+2023-12-11 09:32:00.878 +00:00 [INF] Executing endpoint 'HTTP: GET /humidity'
+2023-12-11 09:32:00.909 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 09:32:00.966 +00:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Id", "h"."dateTime", "h"."humidity", "h"."sensorId"
+FROM "HumidityDatas" AS "h"
+2023-12-11 09:32:00.967 +00:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Humidity.HumidityDb'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-12-11 09:32:00.998 +00:00 [ERR] An error occurred: Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: HumidityDatas'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Program.<>c.<<<Main>$>b__0_2>d.MoveNext() in /Users/divyap/divya/univ-workshop/humidity-api-minimal/humidity-api-minimal/Program.cs:line 80
+2023-12-11 09:32:00.999 +00:00 [INF] Setting HTTP status code 404.
+2023-12-11 09:32:01.000 +00:00 [INF] Writing value of type 'String' as Json.
+2023-12-11 09:32:01.003 +00:00 [INF] Executed endpoint 'HTTP: GET /humidity'
+2023-12-11 09:32:01.004 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/humidity - - - 404 - application/json;+charset=utf-8 169.6950ms
+2023-12-11 09:32:24.843 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5029/humidity - -
+2023-12-11 09:32:24.857 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5029/humidity - - - 307 0 - 15.2145ms
+2023-12-11 09:32:24.867 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/humidity - -
+2023-12-11 09:32:24.876 +00:00 [INF] Executing endpoint 'HTTP: GET /humidity'
+2023-12-11 09:32:24.902 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 09:32:24.909 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Id", "h"."dateTime", "h"."humidity", "h"."sensorId"
+FROM "HumidityDatas" AS "h"
+2023-12-11 09:32:24.917 +00:00 [INF] Setting HTTP status code 404.
+2023-12-11 09:32:24.917 +00:00 [INF] Writing value of type 'String' as Json.
+2023-12-11 09:32:24.918 +00:00 [INF] Executed endpoint 'HTTP: GET /humidity'
+2023-12-11 09:32:24.919 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/humidity - - - 404 - application/json;+charset=utf-8 52.0387ms
+andTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-12-11 09:32:23.093 +00:00 [INF] Applying migration '20231211093220_InitialCreate'.
+2023-12-11 09:32:23.100 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "HumidityDatas" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_HumidityDatas" PRIMARY KEY AUTOINCREMENT,
+    "sensorId" INTEGER NOT NULL,
+    "humidity" INTEGER NOT NULL,
+    "dateTime" TEXT NOT NULL
+);
+2023-12-11 09:32:23.100 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20231211093220_InitialCreate', '6.0.0');
+2023-12-11 09:32:31.175 +00:00 [INF] Start processing HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=80&count=30
+2023-12-11 09:32:31.193 +00:00 [INF] Sending HTTP request GET https://www.randomnumberapi.com/api/v1.0/random?min=40&max=80&count=30
+2023-12-11 09:32:31.450 +00:00 [INF] Now listening on: https://localhost:7002
+2023-12-11 09:32:31.450 +00:00 [INF] Now listening on: http://localhost:5029
+2023-12-11 09:32:31.452 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 09:32:31.452 +00:00 [INF] Hosting environment: Development
+2023-12-11 09:32:31.452 +00:00 [INF] Content root path: /Users/divyap/divya/univ-workshop/humidity-api-minimal/humidity-api-minimal
+2023-12-11 09:32:31.552 +00:00 [INF] Received HTTP response headers after 357.6798ms - 200
+2023-12-11 09:32:31.553 +00:00 [INF] End processing HTTP request after 381.9624ms - 200
+2023-12-11 09:32:31.702 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 09:32:31.748 +00:00 [WRN]  Humidity is 79 greater than threshold
+2023-12-11 09:32:31.806 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.815 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.815 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.815 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.815 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.815 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.815 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.816 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.816 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.816 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.816 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.816 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.816 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.816 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.816 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.816 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.817 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.817 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.817 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.817 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.817 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.817 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.817 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.818 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.818 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.818 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.818 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.818 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.818 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:31.818 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "HumidityDatas" ("dateTime", "humidity", "sensorId")
+VALUES (@p0, @p1, @p2);
+SELECT "Id"
+FROM "HumidityDatas"
+WHERE changes() = 1 AND "rowid" = last_insert_rowid();
+2023-12-11 09:32:32.663 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/swagger/index.html - -
+2023-12-11 09:32:32.726 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/swagger/index.html - - - 200 - text/html;charset=utf-8 63.7349ms
+2023-12-11 09:32:32.787 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/swagger/v1/swagger.json - -
+2023-12-11 09:32:32.791 +00:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-11 09:32:32.826 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 38.3432ms
+2023-12-11 09:32:37.339 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5029/humidity - -
+2023-12-11 09:32:37.349 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5029/humidity - - - 307 0 - 9.8778ms
+2023-12-11 09:32:37.458 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7002/humidity - -
+2023-12-11 09:32:37.515 +00:00 [INF] Executing endpoint 'HTTP: GET /humidity'
+2023-12-11 09:32:37.544 +00:00 [INF] Entity Framework Core 6.0.0 initialized 'HumidityDb' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-12-11 09:32:37.593 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "h"."Id", "h"."dateTime", "h"."humidity", "h"."sensorId"
+FROM "HumidityDatas" AS "h"
+2023-12-11 09:32:37.597 +00:00 [INF] Setting HTTP status code 200.
+2023-12-11 09:32:37.597 +00:00 [INF] Writing value of type 'List`1' as Json.
+2023-12-11 09:32:37.602 +00:00 [INF] Executed endpoint 'HTTP: GET /humidity'
+2023-12-11 09:32:37.603 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7002/humidity - - - 200 - application/json;+charset=utf-8 145.1287ms
+2023-12-11 09:33:17.361 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5029/metrics - -
+2023-12-11 09:33:17.408 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5029/metrics - - - 200 - application/json 47.0725ms
